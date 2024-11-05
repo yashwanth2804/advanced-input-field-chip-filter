@@ -5,7 +5,7 @@ function FilterComp() {
 
     const { toast } = useToast()
     const [selectedFilter, setSelectedFilter] = useState('starts with');
-    const [filterValues, setFilterValues] = useState([]);
+    const [filterValues, setFilterValues] = useState<string[]>([]);
     const [inputValue, setInputValue] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
     const [wiggleValue, setWiggleValue] = useState<string | null>(null);
